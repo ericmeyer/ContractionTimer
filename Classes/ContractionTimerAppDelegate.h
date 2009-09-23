@@ -12,11 +12,11 @@
 
 @interface ContractionTimerAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    ContractionTimerViewController *viewController;
+    UITabBarController *tabBarController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet ContractionTimerViewController *viewController;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 @end
 

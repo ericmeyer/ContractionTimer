@@ -12,19 +12,18 @@
 @implementation ContractionTimerAppDelegate
 
 @synthesize window;
-@synthesize viewController;
+@synthesize tabBarController;
 
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
-    
-    // Override point for customization after app launch    
-    [window addSubview:viewController.view];
-    [window makeKeyAndVisible];
+- (void)applicationDidFinishLaunching:(UIApplication *)application 
+{
+	[window addSubview:tabBarController.view];
 }
 
 
-- (void)dealloc {
-    [viewController release];
+- (void)dealloc 
+{
+    [tabBarController release];
     [window release];
     [super dealloc];
 }

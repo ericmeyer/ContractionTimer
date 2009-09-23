@@ -10,6 +10,12 @@
 		07010EAE1050520B004D288F /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07010EAA1050520B004D288F /* GTMIPhoneUnitTestDelegate.m */; };
 		07010EAF1050520B004D288F /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 07010EAB1050520B004D288F /* GTMIPhoneUnitTestMain.m */; };
 		07010EB01050520B004D288F /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 07010EAD1050520B004D288F /* GTMSenTestCase.m */; };
+		070241771069C38B0036649C /* MockWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 070241761069C38B0036649C /* MockWindow.m */; };
+		070241BF1069C6BB0036649C /* ContractionResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070241BD1069C6BB0036649C /* ContractionResultsViewController.m */; };
+		070241C01069C6BB0036649C /* ContractionResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 070241BE1069C6BB0036649C /* ContractionResultsViewController.xib */; };
+		070241D21069C73C0036649C /* ContractionResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 070241BE1069C6BB0036649C /* ContractionResultsViewController.xib */; };
+		070241D41069C7410036649C /* ContractionResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070241BD1069C6BB0036649C /* ContractionResultsViewController.m */; };
+		076D537E106988DA0030D254 /* ContractionTimerAppDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 076D537D106988DA0030D254 /* ContractionTimerAppDelegateTest.m */; };
 		0777BF1810486AC400D93E1A /* ContractionTimerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ContractionTimerAppDelegate.m */; };
 		0777BF1910486AC400D93E1A /* ContractionTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* ContractionTimerViewController.m */; };
 		1D3623260D0F684500981E51 /* ContractionTimerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ContractionTimerAppDelegate.m */; };
@@ -39,6 +45,13 @@
 		07010EAB1050520B004D288F /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestMain.m; path = "Google Toolbox/GTMIPhoneUnitTestMain.m"; sourceTree = "<group>"; };
 		07010EAC1050520B004D288F /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSenTestCase.h; path = "Google Toolbox/GTMSenTestCase.h"; sourceTree = "<group>"; };
 		07010EAD1050520B004D288F /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSenTestCase.m; path = "Google Toolbox/GTMSenTestCase.m"; sourceTree = "<group>"; };
+		070241751069C38B0036649C /* MockWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockWindow.h; sourceTree = "<group>"; };
+		070241761069C38B0036649C /* MockWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockWindow.m; sourceTree = "<group>"; };
+		070241BC1069C6BB0036649C /* ContractionResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContractionResultsViewController.h; path = ../ContractionResultsViewController.h; sourceTree = "<group>"; };
+		070241BD1069C6BB0036649C /* ContractionResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContractionResultsViewController.m; path = ../ContractionResultsViewController.m; sourceTree = "<group>"; };
+		070241BE1069C6BB0036649C /* ContractionResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractionResultsViewController.xib; sourceTree = "<group>"; };
+		076D537C106988DA0030D254 /* ContractionTimerAppDelegateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractionTimerAppDelegateTest.h; sourceTree = "<group>"; };
+		076D537D106988DA0030D254 /* ContractionTimerAppDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractionTimerAppDelegateTest.m; sourceTree = "<group>"; };
 		079FD52610504F2E0079DFFA /* ContractionTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContractionTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		079FD52810504F2E0079DFFA /* UnitTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DAA4CE1048188B00E97CF5 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
@@ -80,8 +93,20 @@
 		0724D86A104965F200A9215C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				076D538310698A170030D254 /* MockObjects */,
+				076D537C106988DA0030D254 /* ContractionTimerAppDelegateTest.h */,
+				076D537D106988DA0030D254 /* ContractionTimerAppDelegateTest.m */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		076D538310698A170030D254 /* MockObjects */ = {
+			isa = PBXGroup;
+			children = (
+				070241751069C38B0036649C /* MockWindow.h */,
+				070241761069C38B0036649C /* MockWindow.m */,
+			);
+			name = MockObjects;
 			sourceTree = "<group>";
 		};
 		0777BF0910486A2200D93E1A /* Google Toolbox */ = {
@@ -102,6 +127,8 @@
 			children = (
 				1D3623240D0F684500981E51 /* ContractionTimerAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ContractionTimerAppDelegate.m */,
+				070241BC1069C6BB0036649C /* ContractionResultsViewController.h */,
+				070241BD1069C6BB0036649C /* ContractionResultsViewController.m */,
 				28D7ACF60DDB3853001CB0EB /* ContractionTimerViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* ContractionTimerViewController.m */,
 			);
@@ -146,6 +173,7 @@
 			children = (
 				2899E5210DE3E06400AC0155 /* ContractionTimerViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				070241BE1069C6BB0036649C /* ContractionResultsViewController.xib */,
 				8D1107310486CEB800E47090 /* ContractionTimer-Info.plist */,
 			);
 			name = Resources;
@@ -223,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070241C01069C6BB0036649C /* ContractionResultsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070241D21069C73C0036649C /* ContractionResultsViewController.xib in Resources */,
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* ContractionTimerViewController.xib in Resources */,
 			);
@@ -263,6 +293,9 @@
 				07010EAE1050520B004D288F /* GTMIPhoneUnitTestDelegate.m in Sources */,
 				07010EAF1050520B004D288F /* GTMIPhoneUnitTestMain.m in Sources */,
 				07010EB01050520B004D288F /* GTMSenTestCase.m in Sources */,
+				076D537E106988DA0030D254 /* ContractionTimerAppDelegateTest.m in Sources */,
+				070241771069C38B0036649C /* MockWindow.m in Sources */,
+				070241BF1069C6BB0036649C /* ContractionResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070241D41069C7410036649C /* ContractionResultsViewController.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* ContractionTimerAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* ContractionTimerViewController.m in Sources */,
