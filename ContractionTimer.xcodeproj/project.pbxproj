@@ -15,6 +15,12 @@
 		070241C01069C6BB0036649C /* ContractionResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 070241BE1069C6BB0036649C /* ContractionResultsViewController.xib */; };
 		070241D21069C73C0036649C /* ContractionResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 070241BE1069C6BB0036649C /* ContractionResultsViewController.xib */; };
 		070241D41069C7410036649C /* ContractionResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070241BD1069C6BB0036649C /* ContractionResultsViewController.m */; };
+		07312CB8106B0B9900664987 /* ContractionListingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07312CB7106B0B9900664987 /* ContractionListingTest.m */; };
+		07312CBE106B0D5100664987 /* ContractionListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 07312CBD106B0D5100664987 /* ContractionListing.m */; };
+		07312CBF106B0D5100664987 /* ContractionListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 07312CBD106B0D5100664987 /* ContractionListing.m */; };
+		07312CD0106B1FA300664987 /* Contraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 07312CCF106B1FA300664987 /* Contraction.m */; };
+		07312CD1106B1FA300664987 /* Contraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 07312CCF106B1FA300664987 /* Contraction.m */; };
+		07312DC9106B91FF00664987 /* ContractionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07312DC8106B91FF00664987 /* ContractionTest.m */; };
 		076D537E106988DA0030D254 /* ContractionTimerAppDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 076D537D106988DA0030D254 /* ContractionTimerAppDelegateTest.m */; };
 		0777BF1810486AC400D93E1A /* ContractionTimerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ContractionTimerAppDelegate.m */; };
 		0777BF1910486AC400D93E1A /* ContractionTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* ContractionTimerViewController.m */; };
@@ -50,6 +56,14 @@
 		070241BC1069C6BB0036649C /* ContractionResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContractionResultsViewController.h; path = ../ContractionResultsViewController.h; sourceTree = "<group>"; };
 		070241BD1069C6BB0036649C /* ContractionResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContractionResultsViewController.m; path = ../ContractionResultsViewController.m; sourceTree = "<group>"; };
 		070241BE1069C6BB0036649C /* ContractionResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractionResultsViewController.xib; sourceTree = "<group>"; };
+		07312CB6106B0B9900664987 /* ContractionListingTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractionListingTest.h; sourceTree = "<group>"; };
+		07312CB7106B0B9900664987 /* ContractionListingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractionListingTest.m; sourceTree = "<group>"; };
+		07312CBC106B0D5100664987 /* ContractionListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContractionListing.h; path = ../ContractionListing.h; sourceTree = "<group>"; };
+		07312CBD106B0D5100664987 /* ContractionListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContractionListing.m; path = ../ContractionListing.m; sourceTree = "<group>"; };
+		07312CCE106B1FA300664987 /* Contraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contraction.h; path = ../Contraction.h; sourceTree = "<group>"; };
+		07312CCF106B1FA300664987 /* Contraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contraction.m; path = ../Contraction.m; sourceTree = "<group>"; };
+		07312DC7106B91FF00664987 /* ContractionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractionTest.h; sourceTree = "<group>"; };
+		07312DC8106B91FF00664987 /* ContractionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractionTest.m; sourceTree = "<group>"; };
 		076D537C106988DA0030D254 /* ContractionTimerAppDelegateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractionTimerAppDelegateTest.h; sourceTree = "<group>"; };
 		076D537D106988DA0030D254 /* ContractionTimerAppDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContractionTimerAppDelegateTest.m; sourceTree = "<group>"; };
 		079FD52610504F2E0079DFFA /* ContractionTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContractionTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,9 +107,13 @@
 		0724D86A104965F200A9215C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				07312CB6106B0B9900664987 /* ContractionListingTest.h */,
+				07312CB7106B0B9900664987 /* ContractionListingTest.m */,
 				076D538310698A170030D254 /* MockObjects */,
 				076D537C106988DA0030D254 /* ContractionTimerAppDelegateTest.h */,
 				076D537D106988DA0030D254 /* ContractionTimerAppDelegateTest.m */,
+				07312DC7106B91FF00664987 /* ContractionTest.h */,
+				07312DC8106B91FF00664987 /* ContractionTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -125,6 +143,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				07312CBC106B0D5100664987 /* ContractionListing.h */,
+				07312CBD106B0D5100664987 /* ContractionListing.m */,
+				07312CCE106B1FA300664987 /* Contraction.h */,
+				07312CCF106B1FA300664987 /* Contraction.m */,
 				1D3623240D0F684500981E51 /* ContractionTimerAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ContractionTimerAppDelegate.m */,
 				070241BC1069C6BB0036649C /* ContractionResultsViewController.h */,
@@ -296,6 +318,10 @@
 				076D537E106988DA0030D254 /* ContractionTimerAppDelegateTest.m in Sources */,
 				070241771069C38B0036649C /* MockWindow.m in Sources */,
 				070241BF1069C6BB0036649C /* ContractionResultsViewController.m in Sources */,
+				07312CB8106B0B9900664987 /* ContractionListingTest.m in Sources */,
+				07312CBE106B0D5100664987 /* ContractionListing.m in Sources */,
+				07312CD1106B1FA300664987 /* Contraction.m in Sources */,
+				07312DC9106B91FF00664987 /* ContractionTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +333,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* ContractionTimerAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* ContractionTimerViewController.m in Sources */,
+				07312CBF106B0D5100664987 /* ContractionListing.m in Sources */,
+				07312CD0106B1FA300664987 /* Contraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
