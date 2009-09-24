@@ -97,6 +97,4 @@
 	return enumeratedContractions;
 }	
 
-// Diff between crontractions (contraction class)
-// Current contraction
 @end

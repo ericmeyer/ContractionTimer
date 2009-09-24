@@ -5,24 +5,13 @@
 
 -(void) testTimeIntervalBetweenContractions
 {
-	NSDate *endTimeContractionOne = [NSDate date];
-	NSDate *startTimeContractionTwo = [endTimeContractionOne addTimeInterval:5];
-	
 	Contraction* contraction1 = [[[Contraction alloc] init] autorelease];
-	contraction1.stop = endTimeContractionOne;
+	contraction1.stop = [NSDate date];
 	
 	Contraction* contraction2 = [[[Contraction alloc] init] autorelease];
-	contraction2.start = startTimeContractionTwo;
+	contraction2.start =  [contraction1.stop addTimeInterval:5];
 	
 	STAssertEquals([contraction2 timeSince:contraction1], (NSTimeInterval) 5, nil);
 }
 
--(void) testLengthOfContraction
-{
-	Contraction *contraction = [[[Contraction alloc] init] autorelease];
-	contraction.start = [NSDate date];
-	contraction.stop = [contraction.start addTimeInterval:5];
-	
-	STAssertEquals([contraction length], 5, nil);
-}
 @end
