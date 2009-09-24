@@ -5,7 +5,7 @@ static ContractionListing *sharedListing = nil;
 
 @implementation ContractionListing
 
-+(id) sharedContractionListing
++(id) sharedListing
 {
 	if (sharedListing == nil)
 	{

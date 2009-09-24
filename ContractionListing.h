@@ -11,10 +11,9 @@
 @interface ContractionListing : NSObject<NSFastEnumeration>
 {
 	NSMutableArray *contractionList;
-
 }
 
-+(id) sharedContractionListing;
++(id) sharedListing;
 -(void) startContraction;
 -(void) stopContraction;
 -(int) count;

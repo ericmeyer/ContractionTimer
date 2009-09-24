@@ -15,13 +15,13 @@
 
 -(void) testSharedContractionListingReturnsObject
 {
-	STAssertNotNil([ContractionListing sharedContractionListing], nil);
+	STAssertNotNil([ContractionListing sharedListing], nil);
 }
 
 -(void) testSharedContractionListingReturnsSameObject
 {
-	STAssertEqualObjects([ContractionListing sharedContractionListing], 
-											 [ContractionListing sharedContractionListing],
+	STAssertEqualObjects([ContractionListing sharedListing], 
+											 [ContractionListing sharedListing],
 											 nil);
 }
 
