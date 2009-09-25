@@ -7,9 +7,12 @@
 //
 
 #import "ContractionResultsViewController.h"
+#import "ContractionListing.h"
 
 
 @implementation ContractionResultsViewController
+
+@synthesize listData;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -21,12 +24,36 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	NSArray *array = [[NSArray alloc] initWithObjects:@"Sleepy", @"Sneezy", nil];
+	
+	self.listData = [ContractionListing sharedListing];
+//	self.listData = array; 
+	[array release];
+  [super viewDidLoad];
 }
-*/
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 
+{ 
+	return [self.listData count]; 
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
+{ 
+	static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier"; 
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: 
+													 SimpleTableIdentifier]; 
+	if (cell == nil) { 
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier] autorelease];
+	} 
+	NSUInteger row = [indexPath row]; 
+	cell.textLabel.text = [listData objectAtIndex:row]; 
+	return cell; 
+} 
+
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.

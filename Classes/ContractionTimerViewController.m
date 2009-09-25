@@ -7,7 +7,6 @@
 //
 
 #import "ContractionTimerViewController.h"
-#import "ContractionListing.h"
 
 @implementation ContractionTimerViewController
 
