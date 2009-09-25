@@ -11,9 +11,26 @@
 
 @implementation ContractionTimerViewController
 
--(IBAction)startTimer: (id)sender {
+-(void) startTimer: (id)sender {
 	ContractionListing* listing = [ContractionListing sharedListing];
 	[listing startContraction];
+
+	UIButton *button = (UIButton *)sender;
+
+	[button setTitle:@"Stop Contraction" forState:UIControlStateNormal];
+	[button removeTarget:nil action:@selector(startTimer:) forControlEvents:UIControlEventTouchUpInside];
+	[button addTarget:nil action:@selector(stopTimer:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void) stopTimer: (id)sender {
+	ContractionListing* listing = [ContractionListing sharedListing];
+	[listing stopContraction];
+	
+	UIButton *button = (UIButton *)sender;
+	
+	[button setTitle:@"Contraction" forState:UIControlStateNormal];
+	[button removeTarget:nil action:@selector(stopTimer:) forControlEvents:UIControlEventTouchUpInside];
+	[button addTarget:nil action:@selector(startTimer:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /*

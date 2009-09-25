@@ -12,7 +12,7 @@
 
 }
 
--(IBAction)startTimer: (id)sender;
-
+-(void) startTimer: (id)sender;
+-(void) stopTimer: (id)sender;
 @end
 
