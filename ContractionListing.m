@@ -35,6 +35,8 @@ static ContractionListing *sharedListing = nil;
 
 -(void) stopContraction
 {
+	Contraction* first = [contractionList objectAtIndex: 0];
+	first.stop = [NSDate date];
 }
 
 -(int) count
