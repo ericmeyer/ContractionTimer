@@ -12,5 +12,7 @@
 
 }
 
+-(IBAction)startTimer: (id)sender;
+
 @end
 
