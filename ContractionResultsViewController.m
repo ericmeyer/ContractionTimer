@@ -7,6 +7,7 @@
 //
 
 #import "ContractionResultsViewController.h"
+#import "ContractionListing.h"
 
 
 @implementation ContractionResultsViewController
@@ -26,8 +27,10 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	NSArray *array = [[NSArray alloc] initWithObjects:@"Sleepy", @"Sneezy"];
-	self.listData = array; 
+	NSArray *array = [[NSArray alloc] initWithObjects:@"Sleepy", @"Sneezy", nil];
+	
+	self.listData = [ContractionListing sharedListing];
+//	self.listData = array; 
 	[array release];
   [super viewDidLoad];
 }
