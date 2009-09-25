@@ -7,14 +7,10 @@
 //
 
 #import "ContractionTimerViewController.h"
-#import "ContractionListing.h"
 
 @implementation ContractionTimerViewController
 
--(IBAction)startTimer: (id)sender {
-	ContractionListing* listing = [ContractionListing sharedListing];
-	[listing startContraction];
-}
+
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.

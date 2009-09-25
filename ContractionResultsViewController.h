@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ContractionResultsViewController : UIViewController {
-
+@interface ContractionResultsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+	NSArray *listData;
 }
+
+@property (nonatomic, retain) NSArray *listData;
 
 @end
