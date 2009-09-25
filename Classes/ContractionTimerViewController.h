@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ContractionListing.h"
 
 @interface ContractionTimerViewController : UIViewController {
 
